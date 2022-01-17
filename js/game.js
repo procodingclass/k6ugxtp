@@ -97,6 +97,7 @@ class Game {
     if (player.distance > 4670) {
       gameState = 2;
       player.rank += 1;
+      player.update();
       player.updateBikesAtEnd(player.rank);
     }
     drawSprites();
