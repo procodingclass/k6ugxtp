@@ -78,21 +78,19 @@ class Game {
     if (keyIsDown(UP_ARROW)) {
       player.positionY -= 10;
       player.distance += 10;
-      player.rotation = 0;
       player.update();
     }
 
     if (keyIsDown(LEFT_ARROW)) {
-      this.leftKeyActive = true;
+      
       player.positionX -= 5;
-      player.rotation = -25;
       player.update();
     }
 
     if (keyIsDown(RIGHT_ARROW)) {
-      this.leftKeyActive = false;
+      
       player.positionX += 5;
-      player.rotation = 25;
+      
       player.update();
     }
 
